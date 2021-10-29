@@ -33,10 +33,34 @@ a {
     width: 100%;
     justify-content: flex-end;
 }
-
 .view-bar a {
     display: block;
     padding: 5px;
     border-radius: 5px;
     margin: 3px;
+}
+
+/* main */
+main {
+    padding: 50px;
+    min-height: 100vh;
+    min-width: 100vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.user-camera {
+    height: 194px;
+    width: 259px;
+    position: relative;
+    margin: 8px 2px;
+    background-image: url(../img/graziello.jpg);
+    
+}
+.user-camera .user {
+    font-size: 0.8em;
+    padding: 5px;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
 }
