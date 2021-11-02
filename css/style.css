@@ -26,11 +26,18 @@ a {
     color: white;  
 }
 
+.btn {
+  padding: 0.5em;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
 /* header */
 .view-bar {
     position: fixed;
     width: 100%;
-    padding-bottom: 30px ;
     justify-content: flex-end;
     z-index: 1;
     background-color: black;
@@ -73,39 +80,50 @@ main {
     padding-right: 2px;
 }
 
-/* nav */
-nav {
-    height: 100px;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    background-color: rgb(47, 47, 48);
-    align-items: center;
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: strech;
+  height: 100px;
+}
+footer .footer-menu {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
-nav .btn {
-    padding: 10px;
-    text-align: center;
-    align-items: center;
+footer .footer-menu li {
+  display: flex;
+  margin: 5px;
 }
-
-nav .btn .main i {
-    font-size: 2em;
+footer .footer-menu li:hover {
+  background-color: grey;
+  border-radius: 5px;
 }
-
-nav .btn .main {
-    flex-direction: column;
+footer .footer-menu li.doble-btn .btn:first-child {
+  margin: 0 10px 0 0;
 }
-nav .btn .main .btn-text{
-    padding-top: 5px;
-    font-size: 0.8em;
+footer .btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
 }
-
-nav .btn .side-chevron {
-    padding-left: 20px;
-    font-size: 0.8em;
+footer .btn:hover,
+footer .btn:active,
+footer .btn:focus {
+  background-color: rgba(255, 255, 255, 0.5);
 }
-nav .btn .side-chevron a{
-    display: block;
-    height: 100%;
+footer .btn.green i {
+  color: green;
+}
+footer .btn.red {
+  height: 100%;
+  background-color: grey;
+  color: red;
+}
+footer .footer-right {
+  flex-shrink: 0;
 }
